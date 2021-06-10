@@ -48,5 +48,20 @@ Looking at the [5th BMTT MOTChallenge Workshop: Multi-Object Tracking and Segmen
 
 * [ReMOTS: Refining Multi-Object Tracking and Segmentation](https://motchallenge.net/workshops/bmtt2020/papers/ReMOTS.pdf)
 * [PointTrack++ for Effective Online Multi-Object Tracking and Segmentation](https://motchallenge.net/workshops/bmtt2020/papers/PointTrack++.pdf)
+* [TrackFormer: Multi-Object Tracking with Transformers](https://arxiv.org/pdf/2101.02702.pdf)
+  - https://github.com/timmeinhardt/trackformer
 
-The first paper does not have an accompanying Github repo unfortunately. Therefore, after all of the above description and before CVPR 2021 occurs, the very best model we can find that is publicly available is this repo that's sitting in front of you. This repo shall be carefully examined to see if it can help achieve the 2nd stage of the three step plan.
+The first paper does not have an accompanying Github repo unfortunately. Therefore, after all of the above description and before CVPR 2021 occurs, the very best model we can find that is publicly available is this repo that's sitting in front of you. This repo shall be carefully examined to see if it can help achieve the 2nd stage of the three step plan. Important side note: this codebase is for PointTrack; the authors claim that PointTrack++ will be out soon.
+
+More models discovered on the KITTI leaderboard (none of them have weights):
+
+* ReMOTS: Self-Supervised Refining Multi-Object Tracking and Segmentation
+  - no github
+* MOTSFusion
+  - https://github.com/tobiasfshr/MOTSFusion
+* EagerMOT: 3D Multi-Object Tracking via Sensor Fusion
+  - https://github.com/aleksandrkim61/EagerMOT
+* ViP-DeepLab
+  - https://github.com/joe-siyuan-qiao/ViP-DeepLab
+* Joint Monocular Vehicle 3D Detction, Tracking and Segmentation
+  - https://github.com/ucbdrive/3d-vehicle-tracking 
