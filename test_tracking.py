@@ -56,8 +56,8 @@ if os.path.exists(args['checkpoint_path']):
     model.load_state_dict(state['model_state_dict'], strict=True)
     print('Load dict from %s' % args['checkpoint_path'])
 else:
-    assert(False, 'checkpoint_path {} does not exist!'.format(args['checkpoint_path']))
     print(args['checkpoint_path'])
+    assert False, 'checkpoint_path {} does not exist!'.format(args['checkpoint_path'])
 
 model.eval()
 

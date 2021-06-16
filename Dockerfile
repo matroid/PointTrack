@@ -23,6 +23,10 @@ RUN pip install -U pip \
     && sed -i "s/#c.NotebookApp.open_browser = True/c.NotebookApp.open_browser = False/g" /root/.jupyter/jupyter_lab_config.py \
     && sed -i "s/#c.NotebookApp.terminado_settings = {}/c.NotebookApp.terminado_settings = {'shell_command': ['bash']}/g" /root/.jupyter/jupyter_lab_config.py
 
+# Install PointTrack dependencies
+COPY requirements.txt /root/requirements.txt
+RUN pip install -r /root/requirements.txt
+
 # Set bash as shell (for Jupyter lab)
 ENV SHELL=/bin/bash
 

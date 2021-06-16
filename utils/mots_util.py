@@ -147,6 +147,7 @@ class TrackHelper(object):
     def tracking(self, subfolder, frameCount, embeds, masks):
         self.current_video = subfolder if self.current_video == None else self.current_video
         self.next_inst_id = 1 if self.next_inst_id == None else self.next_inst_id
+                
         if not subfolder == self.current_video:
             # a new video
             self.export_last_video()
